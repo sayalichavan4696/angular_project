@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router'
 import {MatDialog} from '@angular/material'
-
+import {UserService} from '../services/user.service'
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -9,28 +9,35 @@ import {MatDialog} from '@angular/material'
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private router:Router) { }
- private username:string
- private password:string
+  constructor(private router:Router,private _userService:UserService) { }
+ private username:string ='admin'
+ private password:string ='admin'
  //private signup:string
   ngOnInit() {
   }
- login()
- {
-  if(this.username === 'admin' && this.password ==='admin'){
-    this.router.navigate(['dashboard'])
-  }
-  else
-  {
+//  login()
+//  {
+//   if(this.username === 'admin' && this.password ==='admin'){
+//     this.router.navigate(['dashboard'])
+//   }
+//   else
+//   {
     
-    alert("Invalid Credentials")
-  }
+//     alert("Invalid Credentials")
+//   }
+ //}
+ login(){
+   if(this._userService.authUser(this.username,this.password)){
+    this.router.navigate(['dashboard'])
+
+   }
+   else{
+     alert("Invalid Credentials")
+   }
  }
  signUp(){
   
       this.router.navigate(['signup'])
-  
-  alert("hii")
  }
  
 }
