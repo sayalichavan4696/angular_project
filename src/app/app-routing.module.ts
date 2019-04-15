@@ -10,7 +10,6 @@ import { BagsComponent } from './bags/bags.component';
 import { TshirtDetailsComponent } from './tshirt-details/tshirt-details.component';
 import { ShirtDetailsComponent } from './shirt-details/shirt-details.component';
 import { JeansDetailsComponent } from './jeans-details/jeans-details.component'
-import { from } from 'node_modules_bkp/rxjs/src';
 const routes: Routes = [
   {
     path: '',

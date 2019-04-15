@@ -1,3 +1,17 @@
-<p>
-  jeans-details works!
-</p>
+<table class="table table-bordered">
+    <thead>
+      <tr>
+      <th>Product id</th>
+      <th>Color</th>
+      <th>Brand</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = 'let Product of jeansdata'>
+        <td>{{Product.id}}</td>
+        <td>{{Product.color}}</td>
+        <td>{{Product.brand}}</td>
+      </tr>
+      
+    </tbody>
+    </table>

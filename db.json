@@ -1,0 +1,54 @@
+{
+  "t_shirts":[
+    {
+      "id":1,
+      "color":"black",
+      "size":"normal"
+    },
+    {
+      "id":2,
+      "color":"white",
+      "size":"large"
+    },
+    {
+      "id":3,
+      "color":"grey",
+      "size":"extra large"
+    }
+  ],
+  "jeans" :[
+    {
+      "id":1,
+      "color":"white",
+      "brand":"Levis"
+    },
+    {
+      "id":2,
+      "color":"black",
+      "brand":"Dennim"
+    }
+
+  ],
+
+  "shirts":[
+    {
+      "id":1,
+      "color":"red",
+      "size":"medium"
+
+    },
+    {
+      "id":2,
+      "color":"grey",
+      "size":"large"
+    },
+    {
+      "id":3,
+      "color":"white",
+      "size":"extra large"
+    }
+
+  ]
+
+
+}

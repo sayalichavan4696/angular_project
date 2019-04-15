@@ -15,18 +15,9 @@ export class LoginComponent implements OnInit {
  //private signup:string
   ngOnInit() {
   }
-//  login()
-//  {
-//   if(this.username === 'admin' && this.password ==='admin'){
-//     this.router.navigate(['dashboard'])
-//   }
-//   else
-//   {
-    
-//     alert("Invalid Credentials")
-//   }
- //}
+
  login(){
+   console.log(this._userService.authUser(this.username,this.password))
    if(this._userService.authUser(this.username,this.password)){
     this.router.navigate(['dashboard'])
 

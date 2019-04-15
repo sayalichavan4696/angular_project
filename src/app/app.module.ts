@@ -16,6 +16,7 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 import { TshirtDetailsComponent } from './tshirt-details/tshirt-details.component';
 import { ShirtDetailsComponent } from './shirt-details/shirt-details.component';
 import { JeansDetailsComponent } from './jeans-details/jeans-details.component';
+import {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { JeansDetailsComponent } from './jeans-details/jeans-details.component';
     FormsModule,
     CustomMaterialModule,
     FlexLayoutModule,
+    HttpClientModule
 
   ],
   providers: [ ],

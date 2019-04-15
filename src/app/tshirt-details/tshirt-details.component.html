@@ -1,3 +1,17 @@
-<p>
-  tshirt-details works!
-</p>
+<table class="table table-bordered">
+<thead>
+  <tr>
+  <th>Product id</th>
+  <th>Color</th>
+  <th>Size</th>
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor = 'let Product of tshirtdata'>
+    <td>{{Product.id}}</td>
+    <td>{{Product.color}}</td>
+    <td>{{Product.size}}</td>
+  </tr>
+  
+</tbody>
+</table>

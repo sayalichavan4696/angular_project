@@ -20,9 +20,11 @@
     <mat-sidenav-container class="custom-sidenav-container ">
       <mat-sidenav mode="side" opened>
         <mat-nav-list>
-          <a mat-list-item routerLink="clothes">Clothes</a>
-          <a mat-list-item routerLink="shoes">Shoes</a>
-          <a mat-list-item routerLink="bags">Bags</a>
+          
+          <a mat-list-item routerLink="clothes"  >Clothes</a>
+          <a mat-list-item routerLink="shoes" routerLinkActive="activeLink"  [routerLinkActiveOptions]="{exact: true}" >Shoes</a>
+          <a mat-list-item routerLink="bags" routerLinkActive="activeLink"  [routerLinkActiveOptions]="{exact: true}" >Bags</a>
+        
         </mat-nav-list>
       </mat-sidenav>
       <mat-sidenav-content>
